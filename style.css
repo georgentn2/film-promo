@@ -1,0 +1,502 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Colors variable
+*/
+
+:root {
+    --primary-red: #D32E2A;
+    --primary-red-faded: #c44644;
+    --secondary-sand-gold: #D09771;
+    --bg-brown-black: #403630;
+    --bg-black: #252525;
+    --text-heading-white: rgb(195, 195, 195);
+    --text-faded-white: #85837d;
+    --text-highlight-yellow: #FFD469;
+    --text-black: #101010;
+}
+
+body {
+    background-color: var(--bg-black);
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(./images/title-bg-img.jpg);
+    background-size: cover;
+}
+
+header .hero-wrapper {
+    margin: 0 10em 0 10em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav>a img {
+    padding: 1.5em 1.5em 1.5em 0;
+}
+
+header nav ul {
+    /* float: right; */
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    padding: 1em;
+    color: var(--text-heading-white);
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+}
+
+
+/* general elements desogn */
+
+h1 {
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    color: var(--text-heading-white);
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    color: var(--text-heading-white);
+    font-size: 36px;
+    padding-bottom: .5em;
+}
+
+h3 {
+    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    color: var(--primary-red-faded);
+    padding-bottom: .5em;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    color: var(--secondary-sand-gold);
+    padding-bottom: .5em;
+    font-size: 24px;
+}
+
+body {
+    color: var(--text-faded-white);
+}
+
+p {
+    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+
+/* Hero area Styling */
+
+.hero-area-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-area-title h1 {
+    padding: 1.5em 2em 1em 0em;
+    line-height: 1.2em;
+}
+
+.hero-area-title h1 span {
+    color: #D09771;
+}
+
+.hero-area-title figure {
+    padding: 3em 0em 3em 3em;
+    margin-right: -6em;
+}
+
+.hero-area-title figure figcaption {
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    color: var(--text-faded-white);
+    font-size: 24px;
+    margin-left: 2em;
+}
+
+.hero-area-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.hero-area-content .screening-type {
+    margin-top: 5em;
+    /* margin-right: 4em; */
+}
+
+.hero-area-content .screening-type p {
+    font-size: 28px;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    color: var(--secondary-sand-gold);
+    margin-bottom: .5em;
+}
+
+.hero-area-content .screening-type a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+    padding: 0.2em 1.7em 0.2em 1.7em;
+    color: var(--text-heading-white);
+    background-color: var(--primary-red);
+    transition: ease-in-out .5s;
+}
+
+.hero-area-content .screening-type a:hover {
+    color: var(--text-black);
+    background-color: var(--secondary-sand-gold);
+}
+
+.hero-wrapper .hero-info dt {
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+}
+
+.hero-wrapper .hero-info dd {
+    font-size: 28px;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    color: var(--secondary-sand-gold);
+    padding-bottom: .5em;
+}
+
+.hero-wrapper>p {
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 16px;
+    max-width: 50%;
+    margin: 0 auto;
+    color: var(--text-faded-white);
+}
+
+
+/* about movie homepage section */
+
+.section-wrapper {
+    margin: 5em 10em 5em 10em;
+}
+
+.section-wrapper>p:first-child {
+    color: var(--text-highlight-yellow);
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.about-wrapper .trailer-image {
+    width: 200px;
+    margin: 1em 10em 3em 0em;
+    width: 400px;
+    cursor: pointer;
+    padding: 8em 4.8em;
+    filter: sepia(60%);
+    background-size: cover;
+    background-image: url(./images/godfather-poster.png);
+}
+
+.about-wrapper .trailer-image:hover {
+    filter: none;
+    transition: ease-in-out .5s;
+}
+
+.about-wrapper .about-content p {
+    padding-bottom: 1em;
+}
+
+.about-wrapper .about-content .blood-bg-faded {
+    background-image: url(./images/blood-bg-faded.png);
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    margin: -15em 0 0 10em;
+}
+
+.about-wrapper .about-content a {
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+    padding: 0.2em 1em 0.2em 1em;
+    color: var(--text-heading-white);
+    background-color: var(--primary-red);
+    transition: ease-in-out .5s;
+    text-decoration: none;
+}
+
+.about-wrapper .about-content a:hover {
+    color: var(--text-black);
+    background-color: var(--secondary-sand-gold);
+}
+
+.awards {
+    margin: 2em 0 2em 0;
+}
+
+.awards img {
+    margin: 2em;
+}
+
+
+/* title actor section */
+
+.title-actor {
+    margin: 2em 0 2em 0;
+    display: flex;
+}
+
+.title-actor .title-actor-image {
+    padding: 5em 10em 0 15em;
+    background-color: #101010;
+}
+
+.title-actor .title-actor-content {
+    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
+    padding: 5em 10em 0em 5em;
+}
+
+.title-actor .title-actor-content .blood-bg-faded {
+    background-image: url(./images/blood-bg-faded.png);
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    margin: -15em 0 0 10em;
+}
+
+
+/* cast and crew wrap */
+
+.cast-and-crew-wrapper {
+    margin: 0 10em 0 10em;
+}
+
+.cast-and-crew-wrapper h4 {
+    padding: 4em 0 1em 0;
+}
+
+.cast-and-crew-wrapper .other-cast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 65px;
+    grid-row-gap: 65px;
+}
+
+.cast-and-crew-wrapper .other-cast .cast-wrap {
+    display: flex;
+}
+
+.cast-and-crew-wrapper .other-cast .cast-wrap p {
+    padding-left: 2em;
+}
+
+.cast-and-crew-wrapper .other-cast .cast-wrap figure img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cast-and-crew-wrapper .other-cast .cast-wrap figure figcaption {
+    text-align: center;
+    color: var(--text-highlight-yellow);
+    font-weight: 600;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+    padding-top: 1em;
+}
+
+
+/* director related content styling */
+
+.director-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.director-wrap figure {
+    padding: 1em 12em 0em 0em;
+    border-right: 3px solid #494949;
+}
+
+.director-content {
+    padding-left: 3em;
+}
+
+
+/* cinematography section styling */
+
+.cinematography-wrap {
+    display: flex;
+    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
+}
+
+.cinematography-wrap figure {
+    margin-right: 2em;
+    padding: 5em 10em 5em 10em;
+}
+
+.cinematography-wrap .text-and-rectangle {
+    margin-top: 9em;
+    border: 5px solid var(--primary-red);
+    width: 250px;
+    height: 150px;
+    padding: 3em;
+}
+
+.cinematography-wrap .text-and-rectangle {
+    background-image: url(./images/blood-bg-faded.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 120px;
+}
+
+.cinematography-wrap .text-and-rectangle h2 {
+    color: var(--secondary-sand-gold);
+}
