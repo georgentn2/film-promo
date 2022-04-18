@@ -163,7 +163,7 @@ header {
 }
 
 header .hero-wrapper {
-    margin: 0 10em 0 10em;
+    margin: 0 15em 0 15em;
 }
 
 header nav {
@@ -266,6 +266,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3em;
+  
 }
 
 .hero-area-content .screening-type {
@@ -319,36 +320,45 @@ p {
 
 /* about movie homepage section */
 
-.section-wrapper {
-    margin: 5em 10em 5em 10em;
+.movie-section-wrapper {
+    margin: 5em 15em 5em 15em;
 }
 
-.section-wrapper>p:first-child {
+.movie-section-wrapper>p:first-child {
     color: var(--text-highlight-yellow);
 }
-
+.movie-section-wrapper .awards{
+    text-align: center;
+}
 .about-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 5em;
 }
 
 .about-wrapper .trailer-image {
-    width: 200px;
-    margin: 1em 10em 3em 0em;
-    width: 400px;
+    text-align: center;
     cursor: pointer;
-    padding: 8em 4.8em;
+    width: 300;
+    height: 430;
     filter: sepia(60%);
     background-size: cover;
     background-image: url(./images/godfather-poster.png);
+}
+.about-wrapper .trailer-image img{
+    position: relative;
+    margin-top: 50%;
 }
 
 .about-wrapper .trailer-image:hover {
     filter: none;
     transition: ease-in-out .5s;
 }
+.about-wrapper .about-content{
 
+    flex-basis: 50%;
+}
 .about-wrapper .about-content p {
     padding-bottom: 1em;
 }
@@ -393,12 +403,16 @@ p {
 }
 
 .title-actor .title-actor-image {
-    padding: 5em 10em 0 15em;
+    padding: 5em 5em 0 10em;
     background-color: #101010;
+    flex-basis: 50%;
 }
-
+.title-actor .title-actor-image img{
+    margin-left: 5em;
+}
 .title-actor .title-actor-content {
     background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
+    flex-basis: 50%;
     padding: 5em 10em 0em 5em;
 }
 
@@ -414,7 +428,7 @@ p {
 /* cast and crew wrap */
 
 .cast-and-crew-wrapper {
-    margin: 0 10em 0 10em;
+    margin: 0 15em 0 15em;
 }
 
 .cast-and-crew-wrapper h4 {
@@ -460,29 +474,40 @@ p {
 }
 
 .director-wrap figure {
-    padding: 1em 12em 0em 0em;
-    border-right: 3px solid #494949;
+    flex-basis: 50%;
+    /* border-right: 3px solid #494949; */
 }
+.director-wrap figure img:last-child{
 
+    margin-left: -4em;
+    transform: rotate(-20deg);
+}
 .director-content {
-    padding-left: 3em;
+    flex-basis: 50%;
 }
 
 
 /* cinematography section styling */
 
 .cinematography-wrap {
+    margin: 5em 0 5em 0;
+    padding: 5em 0 5em 0;
     display: flex;
+    /* background-image: url(./images/cinema-seat.png);
+    background-size: contain; */
     background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
 }
 
 .cinematography-wrap figure {
-    margin-right: 2em;
-    padding: 5em 10em 5em 10em;
+    flex-basis: 50%;
+}
+.cinematography-wrap figure img{
+    margin-left: 10em;
 }
 
 .cinematography-wrap .text-and-rectangle {
     margin-top: 9em;
+    margin-left: 9em;
     border: 5px solid var(--primary-red);
     width: 250px;
     height: 150px;
