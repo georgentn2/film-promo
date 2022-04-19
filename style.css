@@ -145,9 +145,10 @@ table {
     --primary-red-faded: #c44644;
     --secondary-sand-gold: #D09771;
     --bg-brown-black: #403630;
+    --bg-faded-maroon:#4B3432;
     --bg-black: #252525;
     --text-heading-white: rgb(195, 195, 195);
-    --text-faded-white: #85837d;
+    --text-faded-white: #918f8a;
     --text-highlight-yellow: #FFD469;
     --text-black: #101010;
 }
@@ -157,7 +158,7 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
+header .hero-background-wrapper {
     background-image: url(./images/title-bg-img.jpg);
     background-size: cover;
 }
@@ -230,7 +231,7 @@ body {
 p {
     font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
     font-size: 16px;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
 
 
@@ -270,7 +271,7 @@ p {
 }
 
 .hero-area-content .screening-type {
-    margin-top: 5em;
+    margin-top: 6em;
     /* margin-right: 4em; */
 }
 
@@ -298,14 +299,15 @@ p {
 
 .hero-wrapper .hero-info dt {
     font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .hero-wrapper .hero-info dd {
-    font-size: 28px;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
     color: var(--secondary-sand-gold);
-    padding-bottom: .5em;
+    padding-top: .4em;
+    padding-bottom: .8em;
 }
 
 .hero-wrapper>p {
@@ -490,7 +492,6 @@ p {
 /* cinematography section styling */
 
 .cinematography-wrap {
-    margin: 5em 0 5em 0;
     padding: 5em 0 5em 0;
     display: flex;
     /* background-image: url(./images/cinema-seat.png);
@@ -524,4 +525,119 @@ p {
 
 .cinematography-wrap .text-and-rectangle h2 {
     color: var(--secondary-sand-gold);
+}
+
+
+/* footer design */
+footer{
+
+    background-color: var(--bg-faded-maroon);
+}
+.footer-wrapper{
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer p{
+    padding-top: .5em;
+    color: var(--text-heading-white);
+}
+.copyright{
+    background-color: #101010;
+}.copyright p{
+    text-align: center;
+    font-size: 14px;
+    padding: 1em;color: var(--text-faded-white);
+}
+
+
+
+/* movie page design ************************************************************** */
+
+.second-hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-faded-maroon);
+}
+.second-hero h2{
+    margin-top: 3em;
+    margin-left: 7em;   
+}
+.second-hero img{
+    margin-right:15em;
+}
+
+
+.content-wrapper{
+    margin: 10em 15em 10em 15em ;
+}
+.movie-synopsis{
+    margin: 5em 0 5em 0;
+}
+.movie-synopsis img{
+    float: right;
+    padding: 0 0 4em 4em;
+}
+.movie-synopsis p{
+    padding-bottom: 1em;
+}
+
+.movie-table-wrapper{
+    padding: 5em;
+    background-color: var(--bg-brown-black);
+
+}
+.movie-table-wrapper  p{
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 24px;
+    color: var(--secondary-sand-gold);
+    width: 100%;
+}
+.movie-table-wrapper dl{
+    padding: 1em;
+font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+font-size: 20px;
+color: var(--text-heading-white);
+}
+.movie-table-wrapper dd{
+float: left;
+padding: 1em 2em 1em 0em;
+width: 40%;
+border-bottom: 3px solid rgb(96, 78, 64);
+}
+.movie-table-wrapper dt{
+    border-bottom: 3px solid rgb(96, 78, 64);
+padding: 1em 2em 1em 0em;
+color: #d4b49e;
+}
+
+.poster-download{
+    margin: 5em 0 5em 0;
+    display: flex;
+}
+.poster-download figure{
+    width: 50%;
+
+}
+.poster-download .download{
+margin-top: 13em;
+}
+.poster-download .download h4{
+    margin-bottom: 1em;
+}
+.poster-download .download a{
+margin-top: 2em;
+   text-decoration: none;
+    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-size: 20px;
+    padding: 0.2em 1.7em 0.2em 1.7em;
+    color: var(--text-heading-white);
+    background-color: var(--primary-red);
+    transition: ease-in-out .5s;
+}
+
+.poster-download .download a:hover {
+    color: var(--text-black);
+    background-color: var(--secondary-sand-gold);
 }
