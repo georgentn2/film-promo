@@ -145,7 +145,7 @@ table {
     --primary-red-faded: #c44644;
     --secondary-sand-gold: #D09771;
     --bg-brown-black: #403630;
-    --bg-faded-maroon:#4B3432;
+    --bg-faded-maroon: #4B3432;
     --bg-black: #252525;
     --text-heading-white: rgb(195, 195, 195);
     --text-faded-white: #918f8a;
@@ -267,7 +267,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3em;
-  
+
 }
 
 .hero-area-content .screening-type {
@@ -329,9 +329,11 @@ p {
 .movie-section-wrapper>p:first-child {
     color: var(--text-highlight-yellow);
 }
-.movie-section-wrapper .awards{
+
+.movie-section-wrapper .awards {
     text-align: center;
 }
+
 .about-wrapper {
     display: flex;
     justify-content: space-between;
@@ -348,7 +350,8 @@ p {
     background-size: cover;
     background-image: url(./images/godfather-poster.png);
 }
-.about-wrapper .trailer-image img{
+
+.about-wrapper .trailer-image img {
     position: relative;
     margin-top: 50%;
 }
@@ -357,10 +360,12 @@ p {
     filter: none;
     transition: ease-in-out .5s;
 }
-.about-wrapper .about-content{
+
+.about-wrapper .about-content {
 
     flex-basis: 50%;
 }
+
 .about-wrapper .about-content p {
     padding-bottom: 1em;
 }
@@ -409,9 +414,11 @@ p {
     background-color: #101010;
     flex-basis: 50%;
 }
-.title-actor .title-actor-image img{
+
+.title-actor .title-actor-image img {
     margin-left: 5em;
 }
+
 .title-actor .title-actor-content {
     background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
     flex-basis: 50%;
@@ -479,11 +486,13 @@ p {
     flex-basis: 50%;
     /* border-right: 3px solid #494949; */
 }
-.director-wrap figure img:last-child{
+
+.director-wrap figure img:last-child {
 
     margin-left: -4em;
     transform: rotate(-20deg);
 }
+
 .director-content {
     flex-basis: 50%;
 }
@@ -502,7 +511,8 @@ p {
 .cinematography-wrap figure {
     flex-basis: 50%;
 }
-.cinematography-wrap figure img{
+
+.cinematography-wrap figure img {
     margin-left: 10em;
 }
 
@@ -529,106 +539,125 @@ p {
 
 
 /* footer design */
-footer{
+footer {
 
     background-color: var(--bg-faded-maroon);
 }
-.footer-wrapper{
+
+.footer-wrapper {
     padding: 5em;
     display: flex;
     justify-content: space-between;
 
 }
-footer p{
+
+footer p {
     padding-top: .5em;
     color: var(--text-heading-white);
 }
-.copyright{
+
+.copyright {
     background-color: #101010;
-}.copyright p{
+}
+
+.copyright p {
     text-align: center;
     font-size: 14px;
-    padding: 1em;color: var(--text-faded-white);
+    padding: 1em;
+    color: var(--text-faded-white);
 }
 
 
 
 /* movie page design ************************************************************** */
 
-.second-hero{
+.second-hero {
     display: flex;
     justify-content: space-between;
     background-color: var(--bg-faded-maroon);
 }
-.second-hero h2{
+
+.second-hero h2 {
     margin-top: 3em;
-    margin-left: 7em;   
+    margin-left: 7em;
 }
-.second-hero img{
-    margin-right:15em;
+
+.second-hero img {
+    margin-right: 15em;
 }
 
 
-.content-wrapper{
-    margin: 10em 15em 10em 15em ;
+.content-wrapper {
+    margin: 10em 15em 10em 15em;
 }
-.movie-synopsis{
+
+.movie-synopsis {
     margin: 5em 0 5em 0;
 }
-.movie-synopsis img{
+
+.movie-synopsis img {
     float: right;
     padding: 0 0 4em 4em;
 }
-.movie-synopsis p{
+
+.movie-synopsis p {
     padding-bottom: 1em;
 }
 
-.movie-table-wrapper{
+.movie-table-wrapper {
     padding: 5em;
     background-color: var(--bg-brown-black);
 
 }
-.movie-table-wrapper  p{
+
+.movie-table-wrapper p {
     font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
     font-size: 24px;
     color: var(--secondary-sand-gold);
     width: 100%;
 }
-.movie-table-wrapper dl{
+
+.movie-table-wrapper dl {
     padding: 1em;
-font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
-font-size: 20px;
-color: var(--text-heading-white);
-}
-.movie-table-wrapper dd{
-float: left;
-padding: 1em 2em 1em 0em;
-width: 40%;
-border-bottom: 3px solid rgb(96, 78, 64);
-}
-.movie-table-wrapper dt{
-    border-bottom: 3px solid rgb(96, 78, 64);
-padding: 1em 2em 1em 0em;
-color: #d4b49e;
+    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-size: 20px;
+    color: var(--text-heading-white);
 }
 
-.poster-download{
+.movie-table-wrapper dd {
+    float: left;
+    padding: 1em 2em 1em 0em;
+    width: 40%;
+    border-bottom: 3px solid rgb(96, 78, 64);
+}
+
+.movie-table-wrapper dt {
+    border-bottom: 3px solid rgb(96, 78, 64);
+    padding: 1em 2em 1em 0em;
+    color: #d4b49e;
+}
+
+.poster-download {
     margin: 5em 0 5em 0;
     display: flex;
 }
-.poster-download figure{
+
+.poster-download figure {
     width: 50%;
 
 }
-.poster-download .download{
-margin-top: 13em;
+
+.poster-download .download {
+    margin-top: 13em;
 }
-.poster-download .download h4{
+
+.poster-download .download h4 {
     margin-bottom: 1em;
 }
-.poster-download .download a{
-margin-top: 2em;
-   text-decoration: none;
+
+.poster-download .download a {
+    margin-top: 2em;
+    text-decoration: none;
     font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
     font-size: 20px;
     padding: 0.2em 1.7em 0.2em 1.7em;
