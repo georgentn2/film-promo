@@ -127,7 +127,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
+    content: "";
     content: none;
 }
 
@@ -141,15 +141,15 @@ table {
 */
 
 :root {
-    --primary-red: #D32E2A;
+    --primary-red: #d32e2a;
     --primary-red-faded: #c44644;
-    --secondary-sand-gold: #D09771;
+    --secondary-sand-gold: #d09771;
     --bg-brown-black: #403630;
-    --bg-faded-maroon: #4B3432;
+    --bg-faded-maroon: #4b3432;
     --bg-black: #252525;
     --text-heading-white: rgb(195, 195, 195);
     --text-faded-white: #918f8a;
-    --text-highlight-yellow: #FFD469;
+    --text-highlight-yellow: #ffd469;
     --text-black: #101010;
 }
 
@@ -161,10 +161,11 @@ body {
 header .hero-background-wrapper {
     background-image: url(./images/title-bg-img.jpg);
     background-size: cover;
+    background-color: rgb(54 35 35);
 }
 
 header .hero-wrapper {
-    margin: 0 15em 0 15em;
+    margin: 0 13em 0 13em;
 }
 
 header nav {
@@ -176,52 +177,69 @@ header nav>a img {
     padding: 1.5em 1.5em 1.5em 0;
 }
 
-header nav ul {
-    /* float: right; */
-}
-
 header nav ul li {
     display: inline;
 }
 
 header nav ul li a {
-    padding: 1em;
+    padding: 1.5em 1em 1em 1em;
     color: var(--text-heading-white);
     display: inline-block;
     text-decoration: none;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 20px;
+}
+
+a:link,
+a:visited {
+    color: var(--text-heading-white);
+}
+
+a:hover {
+    color: var(--primary-red-faded);
+}
+
+a:active,
+a:focus {
+    color: var(--secondary-sand-gold);
 }
 
 
 /* general elements desogn */
 
 h1 {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     color: var(--text-heading-white);
     font-size: 48px;
 }
 
 h2 {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     color: var(--text-heading-white);
     font-size: 36px;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
 }
 
 h3 {
-    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     color: var(--primary-red-faded);
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     font-size: 20px;
     line-height: 1.5em;
 }
 
 h4 {
-    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     color: var(--secondary-sand-gold);
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     font-size: 24px;
+}
+
+h5 {
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+    color: var(--text-heading-white);
+    font-size: 24px;
+    padding-bottom: 0.5em;
 }
 
 body {
@@ -229,9 +247,10 @@ body {
 }
 
 p {
-    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     font-size: 16px;
     line-height: 1.8em;
+    font-weight: 500;
 }
 
 
@@ -248,7 +267,7 @@ p {
 }
 
 .hero-area-title h1 span {
-    color: #D09771;
+    color: #d09771;
 }
 
 .hero-area-title figure {
@@ -257,17 +276,16 @@ p {
 }
 
 .hero-area-title figure figcaption {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     color: var(--text-faded-white);
     font-size: 24px;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 .hero-area-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3em;
-
 }
 
 .hero-area-content .screening-type {
@@ -277,19 +295,19 @@ p {
 
 .hero-area-content .screening-type p {
     font-size: 28px;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     color: var(--secondary-sand-gold);
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 .hero-area-content .screening-type a {
     text-decoration: none;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 20px;
     padding: 0.2em 1.7em 0.2em 1.7em;
     color: var(--text-heading-white);
     background-color: var(--primary-red);
-    transition: ease-in-out .5s;
+    transition: ease-in-out 0.5s;
 }
 
 .hero-area-content .screening-type a:hover {
@@ -298,16 +316,16 @@ p {
 }
 
 .hero-wrapper .hero-info dt {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 24px;
 }
 
 .hero-wrapper .hero-info dd {
     font-size: 20px;
-    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     color: var(--secondary-sand-gold);
-    padding-top: .4em;
-    padding-bottom: .8em;
+    padding-top: 0.4em;
+    padding-bottom: 0.8em;
 }
 
 .hero-wrapper>p {
@@ -323,7 +341,7 @@ p {
 /* about movie homepage section */
 
 .movie-section-wrapper {
-    margin: 5em 15em 5em 15em;
+    margin: 5em 13em 5em 13em;
 }
 
 .movie-section-wrapper>p:first-child {
@@ -358,11 +376,10 @@ p {
 
 .about-wrapper .trailer-image:hover {
     filter: none;
-    transition: ease-in-out .5s;
+    transition: ease-in-out 0.5s;
 }
 
 .about-wrapper .about-content {
-
     flex-basis: 50%;
 }
 
@@ -379,12 +396,12 @@ p {
 }
 
 .about-wrapper .about-content a {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 20px;
     padding: 0.2em 1em 0.2em 1em;
     color: var(--text-heading-white);
     background-color: var(--primary-red);
-    transition: ease-in-out .5s;
+    transition: ease-in-out 0.5s;
     text-decoration: none;
 }
 
@@ -399,6 +416,7 @@ p {
 
 .awards img {
     margin: 2em;
+    width: 100px;
 }
 
 
@@ -420,7 +438,7 @@ p {
 }
 
 .title-actor .title-actor-content {
-    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1b1a1a 100%);
     flex-basis: 50%;
     padding: 5em 10em 0em 5em;
 }
@@ -437,7 +455,7 @@ p {
 /* cast and crew wrap */
 
 .cast-and-crew-wrapper {
-    margin: 0 15em 0 15em;
+    margin: 0 13em 0 13em;
 }
 
 .cast-and-crew-wrapper h4 {
@@ -460,15 +478,16 @@ p {
     padding-left: 2em;
 }
 
-.cast-and-crew-wrapper .other-cast .cast-wrap figure img {
+
+/* .cast-and-crew-wrapper .other-cast .cast-wrap figure img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+} */
 
 .cast-and-crew-wrapper .other-cast .cast-wrap figure figcaption {
     text-align: center;
     color: var(--text-highlight-yellow);
     font-weight: 600;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 20px;
     padding-top: 1em;
 }
@@ -488,7 +507,6 @@ p {
 }
 
 .director-wrap figure img:last-child {
-
     margin-left: -4em;
     transform: rotate(-20deg);
 }
@@ -505,7 +523,7 @@ p {
     display: flex;
     /* background-image: url(./images/cinema-seat.png);
     background-size: contain; */
-    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1B1A1A 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1b1a1a 100%);
 }
 
 .cinematography-wrap figure {
@@ -538,9 +556,261 @@ p {
 }
 
 
-/* footer design */
-footer {
+/****************** Responsive Design********************************** */
 
+@media screen and (max-width: 1200px) {
+    header .hero-wrapper {
+        margin: 0 5em 0 5em;
+    }
+    .movie-section-wrapper {
+        margin: 5em 5em 5em 5em;
+    }
+    .title-actor .title-actor-image {
+        padding: 3em 3em 0 3em;
+    }
+    .title-actor .title-actor-content {
+        padding: 5em 5em 0em 5em;
+    }
+    .cast-and-crew-wrapper {
+        margin: 0 5em 0 5em;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap {
+        display: block;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap figure figcaption {
+        text-align: left;
+        padding-bottom: 0.5em;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap p {
+        padding-left: 0;
+    }
+    .awards img {
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .hero-wrapper {
+        margin: 0 4em 0 4em;
+    }
+    .hero-area-title figure {
+        margin-right: 0;
+    }
+    .hero-area-title figure img {
+        width: 300px;
+    }
+    .hero-area-title figure figcaption {
+        margin-left: 0em;
+    }
+    .about-wrapper {
+        display: grid;
+    }
+    .about-wrapper .about-content {
+        margin-top: 1em;
+    }
+    .movie-section-wrapper {
+        margin: 5em 4em 5em 4em;
+    }
+    .title-actor {
+        display: block;
+    }
+    .title-actor .title-actor-image {
+        padding: 5em 5em 0 5em;
+    }
+    .title-actor .title-actor-content {
+        padding: 2em 2em 0em 2em;
+    }
+    .cast-and-crew-wrapper {
+        margin: 0 5em 0 5em;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap {
+        display: block;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap figure figcaption {
+        text-align: left;
+        padding-bottom: 0.5em;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap p {
+        padding-left: 0;
+    }
+    .director-wrap figure img:last-child {
+        width: 100px;
+    }
+    .awards img {
+        margin: 0.5em;
+        width: 100px;
+    }
+    .cinematography-wrap figure img {
+        margin-left: 2em;
+    }
+    .cinematography-wrap .text-and-rectangle {
+        margin: 2em;
+    }
+    .cinematography-wrap .text-and-rectangle h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    header nav ul li a {
+        padding: 1.5em 0.5em;
+    }
+    .hero-area-title h1 {
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+    .hero-area-title figure img {
+        width: 250px;
+    }
+    .hero-area-content .hero-info {
+        padding-right: 2em;
+    }
+    .hero-area-content .screening-type {
+        margin-top: 4em;
+    }
+    .hero-area-content .screening-type a {
+        padding: 0.2em;
+    }
+    .hero-wrapper>p {
+        max-width: 80%;
+    }
+    .movie-section-wrapper {
+        margin: 2em 2em 2em 2em;
+    }
+    .awards img {
+        width: 65px;
+    }
+    .cast-and-crew-wrapper {
+        margin: 0 2em 0 2em;
+    }
+    .director-wrap figure img {
+        width: 200px;
+    }
+    .cinematography-wrap figure img {
+        width: 265px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+    }
+    header nav>a img {
+        margin-left: 25%;
+    }
+    header nav ul li a {
+        width: 25%;
+        text-align: center;
+    }
+    header .hero-background-wrapper {
+        background-image: none;
+    }
+    header .hero-wrapper {
+        margin: 2em;
+    }
+    .hero-area-title {
+        display: block;
+    }
+    .hero-area-title h1 {
+        padding: 0;
+        margin: 1em 0 1em 0;
+    }
+    .hero-area-title figure {
+        padding: 1em;
+    }
+    .hero-area-title figure img {
+        width: 300px;
+    }
+    .hero-area-title figure figcaption {
+        margin-left: 2.5em;
+        margin-bottom: 1em;
+        font-size: 20px;
+    }
+    .hero-area-content {
+        display: block;
+        padding: 1em;
+        margin-bottom: 1em;
+        border: 2px solid #6b5e49;
+    }
+    .hero-area-content .hero-info {
+        padding: 0;
+    }
+    .hero-wrapper .hero-info dt {
+        font-size: 18px;
+    }
+    .hero-wrapper .hero-info dd {
+        font-size: 16px;
+    }
+    .hero-wrapper>p {
+        max-width: 90%;
+    }
+    .hero-area-content .screening-type {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .hero-area-content .screening-type a {
+        padding: 0.5em 3.5em 0.5em 3.5em;
+    }
+    .hero-area-content .screening-type p {
+        font-size: 18px;
+    }
+    .about-wrapper .about-content .blood-bg-faded {
+        margin: -15em 0 0 0em;
+        height: 260px;
+    }
+    .awards img {
+        width: 40px;
+    }
+    .title-actor .title-actor-image img {
+        margin-left: 0;
+    }
+    .title-actor .title-actor-content .blood-bg-faded {
+        margin: -15em 0 0 0em;
+        height: 260px;
+    }
+    .cast-and-crew-wrapper .other-cast {
+        display: block;
+    }
+    .cast-and-crew-wrapper .other-cast .cast-wrap {
+        margin-bottom: 2em;
+    }
+    .cast-and-crew-wrapper h4 {
+        padding: 2em 0 1em 0;
+    }
+    .director-wrap {
+        display: block;
+    }
+    .director-wrap figure {
+        margin-bottom: 1em;
+    }
+    .cinematography-wrap {
+        padding: 2em 0 2em 0;
+        display: block;
+    }
+    .cinematography-wrap .text-and-rectangle {
+        width: 200px;
+    }
+}
+
+
+/* footer design */
+
+footer {
     background-color: var(--bg-faded-maroon);
 }
 
@@ -548,11 +818,10 @@ footer {
     padding: 5em;
     display: flex;
     justify-content: space-between;
-
 }
 
 footer p {
-    padding-top: .5em;
+    padding-top: 0.5em;
     color: var(--text-heading-white);
 }
 
@@ -568,13 +837,30 @@ footer p {
 }
 
 
+/* footer responsiveness */
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        padding: 2em;
+    }
+    .footer-wrapper .godfather-logo-left {
+        padding-right: 3em;
+    }
+    .footer-wrapper .godfather-logo-left a img {
+        width: 100px;
+    }
+    .copyright p {
+        font-size: 10px;
+    }
+}
+
 
 /* movie page design ************************************************************** */
 
 .second-hero {
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg-faded-maroon);
+    background: linear-gradient(180deg, #4b3432 32.77%, rgba(75, 52, 50, 0) 100%);
 }
 
 .second-hero h2 {
@@ -586,9 +872,8 @@ footer p {
     margin-right: 15em;
 }
 
-
 .content-wrapper {
-    margin: 10em 15em 10em 15em;
+    margin: 5em 15em 10em 15em;
 }
 
 .movie-synopsis {
@@ -607,20 +892,19 @@ footer p {
 .movie-table-wrapper {
     padding: 5em;
     background-color: var(--bg-brown-black);
-
 }
 
 .movie-table-wrapper p {
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
-    font-size: 24px;
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+    font-size: 28px;
     color: var(--secondary-sand-gold);
     width: 100%;
 }
 
 .movie-table-wrapper dl {
     padding: 1em;
-    font-family: 'Merriweather', 'Nunito Sans', 'Oxygen', 'Source Sans Pro';
-    font-size: 20px;
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+    font-size: 18px;
     color: var(--text-heading-white);
 }
 
@@ -644,29 +928,218 @@ footer p {
 
 .poster-download figure {
     width: 50%;
-
 }
 
 .poster-download .download {
     margin-top: 13em;
 }
 
-.poster-download .download h4 {
+.poster-download .download p {
     margin-bottom: 1em;
+}
+
+.poster-download .download .blood-bg-faded {
+    background-image: url(./images/blood-bg-faded.png);
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    margin: -15em 0 0 10em;
 }
 
 .poster-download .download a {
     margin-top: 2em;
     text-decoration: none;
-    font-family: 'Bebas Neue', 'Roboto Condensed', 'Squada One', 'Staatliches';
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
     font-size: 20px;
     padding: 0.2em 1.7em 0.2em 1.7em;
     color: var(--text-heading-white);
     background-color: var(--primary-red);
-    transition: ease-in-out .5s;
+    transition: ease-in-out 0.5s;
 }
 
 .poster-download .download a:hover {
     color: var(--text-black);
     background-color: var(--secondary-sand-gold);
+}
+
+
+/* facts section design */
+
+.movie-facts h4 {
+    padding-bottom: 2em;
+}
+
+.fact-card {
+    background-color: var(--bg-brown-black);
+    padding: 2em;
+    margin-bottom: 2em;
+    border-left: 4px solid var(--primary-red-faded);
+}
+
+.fact-card p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1em 0em 1em 0em;
+}
+
+
+/* **********************  Tickets and Time Page Design */
+
+.second-hero .movie-kit-illustration {
+    padding: 3em;
+}
+
+.showcase-cinema {
+    display: flex;
+}
+
+.showcase-cinema figure {
+    flex-basis: 50%;
+}
+
+.showcase-cinema .showcase-cinema-content {
+    flex-basis: 50%;
+}
+
+
+/* design of showtime section */
+
+.showtime-wrapper {
+    background-color: var(--bg-brown-black);
+    padding: 3em;
+    margin: 5em 0 5em 0;
+}
+
+.showtime-wrapper .showtime {
+    display: flex;
+}
+
+.showtime-wrapper .showtime h2 {
+    margin-left: 0.5em;
+    font-size: 28px;
+    color: var(--secondary-sand-gold);
+}
+
+.showtime-wrapper .showtime-table {
+    width: 100%;
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+    font-size: 16px;
+    color: var(--text-heading-white);
+}
+
+.showtime-wrapper .showtime-table tr {
+    border-bottom: 3px solid rgb(96, 78, 64);
+}
+
+.showtime-wrapper .showtime-table th {
+    height: 60px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.showtime-wrapper .showtime-table td {
+    height: 60px;
+    vertical-align: middle;
+    color: var(--secondary-sand-gold);
+}
+
+.showtime-wrapper .showtime-table td span {
+    background-color: rgb(218, 164, 116);
+    color: var(--text-black);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.showtime-wrapper .ticket-price-wrapper {
+    display: flex;
+}
+
+.showtime-wrapper .ticket-price-wrapper img {
+    margin-left: 5em;
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table {
+    flex-basis: 50%;
+    width: 100%;
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+    font-size: 16px;
+    color: var(--text-heading-white);
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table tr {
+    border-bottom: 3px solid rgb(96, 78, 64);
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table th {
+    height: 60px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table td {
+    height: 60px;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary-sand-gold);
+}
+
+
+/* design of location and address */
+
+.location-wrapper {
+    display: flex;
+    background-color: #303030;
+}
+
+.location-wrapper .cinema-address {
+    margin: 5em;
+}
+
+.location-wrapper .cinema-address h2 {
+    padding: 0.5em;
+}
+
+.location-wrapper .address-wrapper {
+    display: flex;
+}
+
+.location-wrapper .contact-wrapper {
+    display: flex;
+}
+
+.location-wrapper .address-wrapper img {
+    margin: 1em;
+}
+
+.location-wrapper .contact-wrapper img {
+    margin: 1em;
+}
+
+.location-wrapper .address-wrapper>p {
+    color: var(--secondary-sand-gold);
+    margin: 1em;
+    font-size: 20px;
+}
+
+.location-wrapper .contact-wrapper>p {
+    color: var(--secondary-sand-gold);
+    margin: 1em;
+    font-size: 20px;
+}
+
+.invitation-wrapper h2 {
+    text-align: center;
+    padding-top: 3em;
+    color: var(--text-faded-white);
+}
+
+.invitation-wrapper {
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-image: url(./images/theatre-seats.jpg);
+    background-size: cover;
 }
