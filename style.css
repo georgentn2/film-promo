@@ -145,7 +145,7 @@ table {
     --primary-red-faded: #c44644;
     --secondary-sand-gold: #d09771;
     --bg-brown-black: #403630;
-    --bg-faded-maroon: #4b3432;
+    --bg-faded-maroon: #2b211c;
     --bg-black: #252525;
     --text-heading-white: rgb(195, 195, 195);
     --text-faded-white: #918f8a;
@@ -225,6 +225,7 @@ h3 {
     color: var(--primary-red-faded);
     padding-bottom: 0.5em;
     font-size: 20px;
+    font-weight: 600;
     line-height: 1.5em;
 }
 
@@ -233,6 +234,7 @@ h4 {
     color: var(--secondary-sand-gold);
     padding-bottom: 0.5em;
     font-size: 24px;
+    font-weight: 600;
 }
 
 h5 {
@@ -478,11 +480,6 @@ p {
     padding-left: 2em;
 }
 
-
-/* .cast-and-crew-wrapper .other-cast .cast-wrap figure img {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} */
-
 .cast-and-crew-wrapper .other-cast .cast-wrap figure figcaption {
     text-align: center;
     color: var(--text-highlight-yellow);
@@ -721,7 +718,7 @@ p {
         background-image: none;
     }
     header .hero-wrapper {
-        margin: 2em;
+        margin: 0 1em 1em 1em;
     }
     .hero-area-title {
         display: block;
@@ -860,32 +857,61 @@ footer p {
 .second-hero {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, #4b3432 32.77%, rgba(75, 52, 50, 0) 100%);
+    background: linear-gradient(180deg, #49372B 32.1%, rgba(75, 52, 50, 0) 100%);
+    /* background: linear-gradient(180deg, #654C3B 32.77%, rgba(75, 52, 50, 0) 100%); */
+    /* background: linear-gradient(180deg, #4b3432 32.77%, rgba(75, 52, 50, 0) 100%); */
 }
 
 .second-hero h2 {
     margin-top: 3em;
-    margin-left: 7em;
+    margin-left: 6em;
 }
 
 .second-hero img {
-    margin-right: 15em;
+    padding: 1em;
+    margin-right: 12em;
 }
 
 .content-wrapper {
-    margin: 5em 15em 10em 15em;
+    margin: 5em 12em 10em 12em;
 }
 
 .movie-synopsis {
     margin: 5em 0 5em 0;
 }
 
+.movie-synopsis h4 {
+    padding-bottom: 1em;
+}
+
 .movie-synopsis img {
     float: right;
-    padding: 0 0 4em 4em;
+    width: 400px;
+    padding: 0 0 4em 7em;
 }
 
 .movie-synopsis p {
+    padding-bottom: 1em;
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2em 0 2em 0;
+}
+
+.quotes .frame {
+    border: 8px solid #6c6a6a;
+    padding: 1em;
+    margin: 1em;
+    border: 8px solid #3f3f3f;
+    padding: 1em;
+    margin: 1em;
+    background: #252222;
+    border-radius: 0 50px;
+}
+
+.quotes .frame img {
     padding-bottom: 1em;
 }
 
@@ -911,7 +937,7 @@ footer p {
 .movie-table-wrapper dd {
     float: left;
     padding: 1em 2em 1em 0em;
-    width: 40%;
+    width: 50%;
     border-bottom: 3px solid rgb(96, 78, 64);
 }
 
@@ -932,6 +958,7 @@ footer p {
 
 .poster-download .download {
     margin-top: 13em;
+    padding: 1em;
 }
 
 .poster-download .download p {
@@ -960,6 +987,108 @@ footer p {
 .poster-download .download a:hover {
     color: var(--text-black);
     background-color: var(--secondary-sand-gold);
+}
+
+
+/* movie page responsiveness
+ */
+
+@media screen and (max-width: 1200px) {
+    .content-wrapper {
+        margin: 5em 5em 10em 5em;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .second-hero img {
+        height: 176px;
+        width: 280px;
+        margin-right: 4em;
+    }
+    .second-hero h2 {
+        margin-left: 2em;
+    }
+    .movie-synopsis img {
+        width: 280px;
+    }
+    .quotes {
+        display: block;
+    }
+    .movie-table-wrapper {
+        padding: 2em;
+    }
+    .poster-download {
+        display: block;
+    }
+    .poster-download .download {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .movie-synopsis img {
+        padding: 0 0 1em 0;
+        float: none;
+    }
+    .movie-table-wrapper {
+        padding: 1em;
+    }
+    .movie-table-wrapper dl {
+        padding: .5em;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .second-hero img {
+        height: 80px;
+        width: 117px;
+        margin-right: 2em;
+    }
+    .second-hero h2 {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .content-wrapper {
+        margin: 2em;
+    }
+    .movie-synopsis {
+        margin: 2em 0 2em 0;
+    }
+    .movie-table-wrapper dl {
+        padding: .3em;
+        font-size: 11px;
+    }
+    .movie-table-wrapper dt {
+        padding: 1em 1em 1em 0em;
+    }
+    .movie-table-wrapper p {
+        font-size: 20px;
+    }
+    .poster-download figure img {
+        width: 250px;
+    }
+    .poster-download {
+        margin: 2em 0 0em 0;
+    }
+    .poster-download .download .blood-bg-faded {
+        margin: -15em 0 0 0em;
+    }
+    .fact-card p {
+        font-size: 14px;
+    }
 }
 
 
@@ -1017,6 +1146,7 @@ footer p {
 .showtime-wrapper .showtime h2 {
     margin-left: 0.5em;
     font-size: 28px;
+    padding-top: 0.2em;
     color: var(--secondary-sand-gold);
 }
 
@@ -1052,6 +1182,7 @@ footer p {
 
 .showtime-wrapper .ticket-price-wrapper {
     display: flex;
+    margin-bottom: 2em;
 }
 
 .showtime-wrapper .ticket-price-wrapper img {
@@ -1083,6 +1214,53 @@ footer p {
     font-weight: 600;
     font-size: 20px;
     color: var(--secondary-sand-gold);
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table td input {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background: var(--primary-red-faded);
+    color: white;
+    font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.showtime-wrapper .ticket-price-wrapper .ticket-fare-table td button {
+    width: 2em;
+    font-size: 16px;
+    height: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: var(--text-heading-white);
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+.showtime-wrapper a {
+    font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+    font-size: 20px;
+    padding: 0.2em 1em 0.2em 1em;
+    color: var(--text-heading-white);
+    background-color: var(--primary-red);
+    transition: ease-in-out 0.5s;
+    text-decoration: none;
 }
 
 
@@ -1142,4 +1320,110 @@ footer p {
     height: 400px;
     background-image: url(./images/theatre-seats.jpg);
     background-size: cover;
+}
+
+
+/* Cinema page responsiveness */
+
+@media screen and (max-width: 998px) {
+    .showcase-cinema p {
+        padding: 1em;
+    }
+    .showcase-cinema .showcase-cinema-content h3 {
+        padding: 1em;
+    }
+    .showtime-wrapper .ticket-price-wrapper .ticket-fare-table {
+        flex-basis: 70%;
+    }
+    .showtime-wrapper .ticket-price-wrapper img {
+        width: 180px;
+        height: 160px;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .second-hero img {
+        width: 200px;
+        height: 120px;
+    }
+    .content-wrapper {
+        margin: 0 2em 2em 2em;
+    }
+    .showcase-cinema {
+        display: block;
+    }
+    .showcase-cinema p {
+        padding: 1em 0 0 0;
+    }
+    .showcase-cinema .showcase-cinema-content h3 {
+        padding: 1em 0 0 0;
+    }
+    .showtime-wrapper {
+        padding: 1em;
+        margin: 3em 0 3em 0;
+    }
+    .showtime-wrapper .showtime-table {
+        font-size: 14px;
+    }
+    .showtime-wrapper .ticket-price-wrapper {
+        display: block;
+    }
+    .showtime-wrapper .ticket-price-wrapper img {
+        display: none;
+    }
+    .showtime-wrapper .ticket-price-wrapper .ticket-fare-table {
+        font-size: 14px;
+    }
+    .showtime-wrapper .ticket-price-wrapper .ticket-fare-table td {
+        font-size: 16px;
+    }
+    .location-wrapper {
+        display: block;
+        padding-bottom: 1em;
+    }
+    .location-wrapper iframe {
+        width: 100%;
+    }
+    .location-wrapper .cinema-address {
+        margin: 3em;
+    }
+    .location-wrapper .address-wrapper>p {
+        font-size: 16px;
+    }
+    .location-wrapper .contact-wrapper>p {
+        font-size: 16px;
+    }
+    .invitation-wrapper h2 {
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .second-hero .movie-kit-illustration {
+        padding: 1em;
+    }
+    .showcase-cinema figure img {
+        width: 300px;
+    }
+    .second-hero img {
+        width: 100px;
+        height: 60px;
+    }
+    .showtime-wrapper .showtime-table {
+        font-size: 10px;
+    }
+    .showtime-wrapper .ticket-price-wrapper .ticket-fare-table {
+        font-size: 10px;
+    }
+    .showtime-wrapper .ticket-price-wrapper .ticket-fare-table td {
+        font-size: 14px;
+    }
+    .location-wrapper .cinema-address {
+        margin: 2em;
+    }
+    .invitation-wrapper {
+        min-height: 0;
+        height: 212px;
+    }
 }
