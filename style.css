@@ -1454,10 +1454,6 @@ input[type=number] {
     .showtime-wrapper .ticket-price-wrapper .ticket-fare-table td {
         font-size: 14px;
     }
-    /* .location-wrapper {
-        margin-left: -2em;
-        margin-right: -2em;
-    } */
     .location-wrapper iframe {
         width: 100%;
     }
