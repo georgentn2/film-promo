@@ -1,27 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <!-- head section of the website -->
     <title>About Movie | Godfather movie promotional website</title>
     <meta name="description" content="More details about the movie godfather including synopis, review, re relase poster etc. Godfather movie promotional website">
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="./images/Showcase_logo.png">
+    <link rel="icon" type="image/png" href="./images/status-logo-godfather.png">
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@400;700&family=Nunito+Sans&family=Oxygen&family=Roboto+Condensed&family=Source+Sans+Pro&family=Squada+One&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Bebas+Neue&family=Merriweather:wght@400;700&family=Nunito+Sans&family=Oxygen&family=Roboto+Condensed&family=Source+Sans+Pro&family=Squada+One&family=Staatliches&display=swap"
+        rel="stylesheet">
     <!-- For mobile devices styling-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
     <header>
         <div class="hero-wrapper">
-            <nav>
-                <a href="./index.html" title="godfather-title-logo" aria-current="godfather-title-logo link">
-                    <!-- svg site logo with fallback -->
+            <!-- website navigation -->
+            <nav aria-label="website-navigation">
+                <a href="./index.html" title="godfather-title-logo" aria-label="godfather-title-logo link">
                     <img src="./images/godfather-nav-logo.png" alt="goftather title logos">
                 </a>
                 <ul>
@@ -34,202 +34,194 @@
                     <li>
                         <a href="./tickets.html" aria-label="godfather Cinema page">Cinema</a>
                     </li>
+                </ul>
             </nav>
         </div>
         <div class="second-hero">
-            <h2>
-                Cinema & Tickets
-            </h2>
-            <img src="./images/movie-kit.png" class="movie-kit-illustration" alt="movie-kit-illustration">
-
-        </div>
-        <div class="content-wrapper">
-
-            <div class="showcase-cinema">
-                <figure>
-                    <img src="./images/cinema-showcase.jpg" alt="showcase-cinema-image" width="400">
-                </figure>
-                <div class="showcase-cinema-content">
-                    <h2>
-                        SHOWCASE CINEMAS
-                    </h2>
-                    <h3>
-                        Bringing the magic of cinema to life
-                    </h3>
-                    <p>
-                        We are motivated by the need to keep discovering new and innovative ways to create inspiring experiences, provide world-class service, and bring the magic of cinema to life. Our philosophy is defined by quality, providing luxury and the most premium service
-                        at an affordable price, primarily to ensure that our guests receive the best value possible. We strive to provide the best service possible, leaving a magical experience with every guest, every time.
-                    </p>
-                </div>
+            <div class="title-name-wrapper">
+                <img src="./images/icon-camera-reels.svg" alt="movie-icon" width="45" height="45">
+                <h2>
+                    Cinema & Tickets
+                </h2>
             </div>
+            <img src="./images/movie-kit.png" class="movie-kit-illustration" alt="movie-kit-illustration">
+        </div>
+    </header>
+    <!-- about showcase cinema -->
+    <div class="content-wrapper">
+        <div class="showcase-cinema">
+            <figure>
+                <img src="./images/cinema-showcase.jpg" alt="showcase-cinema-image" width="400">
+            </figure>
+            <div class="showcase-cinema-content">
+                <h2>
+                    SHOWCASE CINEMAS
+                </h2>
+                <h3>
+                    Bringing the magic of cinema to life
+                </h3>
+                <p>
+                    We are motivated by the need to keep discovering new and innovative ways to create inspiring experiences, provide world-class service, and bring the magic of cinema to life. Our philosophy is defined by quality, providing luxury and the most premium service
+                    at an affordable price, primarily to ensure that our guests receive the best value possible. We strive to provide the best service possible, leaving a magical experience with every guest, every time.
+                </p>
+            </div>
+        </div>
+        <!-- showtime and date -->
+        <div class="showtime-wrapper">
+            <div class="showtime">
+                <img src="./images/showtime.png" alt="showtime-logo" width="35" height="35">
+                <h2>
+                    Showtime
+                </h2>
+            </div>
+            <table class="showtime-table">
+                <tbody>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>24.08.22</td>
+                        <td><span>12:00 pm</span></td>
+                        <td><span>06:00 pm</span></td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>25.08.22</td>
+                        <td><span>12:00 pm</span></td>
+                        <td><span>06:00 pm</span></td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>26.08.22</td>
+                        <td><span>12:00 pm</span></td>
+                        <td><span>06:00 pm</span></td>
+                        <td><span>09:00 pm</span></td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>27.08.22</td>
+                        <td><span>12:00 pm</span></td>
+                        <td><span>06:00 pm</span></td>
+                        <td><span>09:00 pm</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="showtime-wrapper">
+            <div class="showtime">
+                <img src="./images/ticketfare.png" alt="ticket-logo" width="35" height="35">
+                <h2>
+                    Ticket Fares
+                </h2>
+            </div>
+            <div class="ticket-price-wrapper">
 
-            <div class="showtime-wrapper">
-                <div class="showtime">
-                    <img src="./images/showtime.png" alt="showtime-logo" width="35" height="35">
-                    <h2>
-                        Showtime
-                    </h2>
-                </div>
-                <table class="showtime-table">
+                <table class="ticket-fare-table">
                     <tbody>
                         <tr>
-                            <th>Thursday</th>
-                            <td>24.08.22</td>
-                            <td><span>12:00 pm</span></td>
-                            <td><span>06:00 pm</span></td>
+                            <th>Adult</th>
+                            <td>£8.50</td>
+                            <td>
+                                <button aria-label="substract radio button">-</button>
+                                <input type="number" value="0">
+                                <button aria-label="add radio button">+</button>
+                            </td>
                         </tr>
                         <tr>
-                            <th>Friday</th>
-                            <td>25.08.22</td>
-                            <td><span>12:00 pm</span></td>
-                            <td><span>06:00 pm</span></td>
+                            <th>Student</th>
+                            <td>£8.00</td>
+                            <td>
+                                <button aria-label="substract radio button">-</button>
+                                <input type="number" value="0">
+                                <button aria-label="add radio button">+</button>
+                            </td>
+
                         </tr>
                         <tr>
-                            <th>Saturday</th>
-                            <td>26.08.22</td>
-                            <td><span>12:00 pm</span></td>
-                            <td><span>06:00 pm</span></td>
-                            <td><span>09:00 pm</span></td>
+                            <th>Child Under age 3</th>
+                            <td>£3.50</td>
+                            <td>
+                                <button aria-label="substract radio button">-</button>
+                                <input type="number" value="0">
+                                <button aria-label="add radio button">+</button>
+                            </td>
+
                         </tr>
                         <tr>
-                            <th>Sunday</th>
-                            <td>27.08.22</td>
-                            <td><span>12:00 pm</span></td>
-                            <td><span>06:00 pm</span></td>
-                            <td><span>09:00 pm</span></td>
+                            <th>VIP</th>
+                            <td>£14.50</td>
+                            <td>
+                                <button aria-label="substract radio button">-</button>
+                                <input type="number" value="0">
+                                <button aria-label="add radio button">+</button>
+                            </td>
+
                         </tr>
                     </tbody>
                 </table>
-
+                <img src="./images/tickets-illus.png" alt="ticket-illustration">
             </div>
-            <div class="showtime-wrapper">
-                <div class="showtime">
-                    <img src="./images/ticketfare.png" alt="ticket-logo" width="35" height="35">
-                    <h2>
-                        Grab Your Tickets
-                    </h2>
-                </div>
-                <div class="ticket-price-wrapper">
-
-                    <table class="ticket-fare-table">
-                        <tbody>
-                            <tr>
-                                <th>Adult</th>
-                                <td>£8.50</td>
-                                <td>
-                                    <button id="sub">-</button>
-                                    <input type="number" value="0">
-                                    <button id="add">+</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Student</th>
-                                <td>£8.00</td>
-                                <td>
-                                    <button id="sub">-</button>
-                                    <input type="number" value="0">
-                                    <button id="add">+</button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <th>Child Under age 3</th>
-                                <td>£3.50</td>
-                                <td>
-                                    <button id="sub">-</button>
-                                    <input type="number" value="0">
-                                    <button id="add">+</button>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <th>VIP</th>
-                                <td>£14.50</td>
-                                <td>
-                                    <button id="sub">-</button>
-                                    <input type="number" value="0">
-                                    <button id="add">+</button>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                    <img src="./images/tickets-illus.png" alt="ticket-illustration">
-                </div>
-                <a href="#">Continue to Buy Tickets</a>
-            </div>
+            <a href="#" aria-label="Continue to Buy Tickets button">Continue to Buy Tickets</a>
         </div>
+    </div>
 
-
-
-        <div class="location-wrapper">
-
-            <iframe width='50%' height='400px' src="https://api.mapbox.com/styles/v1/georgentn2/cl26q4en1002l14nz9b6jhqp5.html?title=false&access_token=pk.eyJ1IjoiZ2VvcmdlbnRuMiIsImEiOiJjazlyZHpmcG4wYWNiM2ZwaWI1ZmZ2ODUwIn0.Av-DMf96HrJ3UKgyoR5pVg&zoomwheel=false#17.57/52.574128/-0.223183"
-                title="Streets-copy" style="border:none;"></iframe>
-            <div class="cinema-address">
-                <h2>
-                    Find Showcase
-                </h2>
-                <div class="address-wrapper">
-                    <img src="./images/location.png" alt="location-logo" width="35" height="35">
-                    <p class="address h-card"> <span class="p-street-address">Huntington, </span>
-                        <span class="p-locality">Peterborough, </span> <span class="p-postal-code">PE3 9LP</span>
-                    </p>
-                </div>
-                <div class="contact-wrapper">
-                    <img src="./images/phone.png" alt="phone-logo" width="35" height="35">
-
-                    <p class="p-tel">07435841581 </p>
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="invitation-wrapper">
+    <div class="location-wrapper">
+        <!-- Maps using mapbox showcase cinemas -->
+        <iframe height='400' src="https://api.mapbox.com/styles/v1/georgentn2/cl26q4en1002l14nz9b6jhqp5.html?title=false&access_token=pk.eyJ1IjoiZ2VvcmdlbnRuMiIsImEiOiJjazlyZHpmcG4wYWNiM2ZwaWI1ZmZ2ODUwIn0.Av-DMf96HrJ3UKgyoR5pVg&zoomwheel=false#17.57/52.574128/-0.223183"
+            title="Streets-copy" style="border:none;"></iframe>
+        <div class="cinema-address">
             <h2>
-                Grab your tickets fast for an unforgettable cinematic experience back in cinemas
+                Find Showcase
             </h2>
-
-        </div>
-        <!-- footer of the page -->
-        <footer>
-            <div class="footer-wrapper">
-
-                <div class="godfather-logo-left">
-                    <a href="./index.html" title="godfather-title-logo" aria-current="godfather-title-logo link">
-                        <!-- svg site logo with fallback -->
-                        <img src="./images/godfather-nav-logo.png" alt="goftather title logos">
-                    </a>
-                    <p>
-                        In association with
-                    </p>
-                    <a href="./index.html" aria-current="paramount-logo link">
-                        <!-- svg site logo with fallback -->
-                        <img src="./images/paramount.png" alt="paramount logo" width="85">
-                    </a>
-                </div>
-
-                <div class="cinema-address">
-                    <a href="./index.html" aria-current="showcase-logo link">
-                        <!-- svg site logo with fallback -->
-                        <img src="./images/Showcase_logo.png" alt="showcase logo" width="85">
-                    </a>
-                    <P>Showcase Cinemas</p>
-                    <p class="address h-card"> <span class="p-street-address">Huntington, </span>
-                        <span class="p-locality">Peterborough, </span> <span class="p-postal-code">PE3 9LP</span>
-                    </p>
-                    <p> Phone <span class="p-tel"> 07435841581</span></p>
-
-                </div>
-            </div>
-            <div class="copyright">
-                <p>
-                    A website by Anto Antony George for Educational Purposes
+            <div class="address-wrapper">
+                <img src="./images/location.png" alt="location-logo" width="35" height="35">
+                <p class="address h-card"> <span class="p-street-address">Huntington, </span>
+                    <span class="p-locality">Peterborough, </span> <span class="p-postal-code">PE3 9LP</span>
                 </p>
             </div>
-        </footer>
+            <div class="contact-wrapper">
+                <img src="./images/phone.png" alt="phone-logo" width="35" height="35">
+                <p class="p-tel">07435841581 </p>
+            </div>
+        </div>
+    </div>
+    <div class="invitation-wrapper">
+        <h2>
+            Grab your tickets fast for an unforgettable cinematic experience back in cinemas
+        </h2>
+    </div>
+    <!-- footer of the page -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="godfather-logo-left">
+                <a href="./index.html" title="godfather-title-logo" aria-label="godfather-title-logo link">
+
+                    <img src="./images/godfather-nav-logo.png" alt="goftather title logos">
+                </a>
+                <p>
+                    In association with
+                </p>
+                <a href="./index.html" aria-label="paramount-logo link">
+
+                    <img src="./images/paramount.png" alt="paramount logo" width="85">
+                </a>
+            </div>
+            <div class="cinema-address">
+                <a href="./index.html" aria-label="showcase-logo link">
+
+                    <img src="./images/Showcase_logo.png" alt="showcase logo" width="85">
+                </a>
+                <P>Showcase Cinemas</p>
+                <p class="address h-card"> <span class="p-street-address">Huntington, </span>
+                    <span class="p-locality">Peterborough, </span> <span class="p-postal-code">PE3 9LP</span>
+                </p>
+                <p> Phone <span class="p-tel"> 07435841581</span></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                A website by Anto Antony George for Educational Purposes
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

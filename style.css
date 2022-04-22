@@ -168,6 +168,9 @@ header .hero-wrapper {
     margin: 0 13em 0 13em;
 }
 
+
+/* navigation of webpage design */
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -190,9 +193,12 @@ header nav ul li a {
     font-size: 20px;
 }
 
+
+/* link states design */
+
 a:link,
 a:visited {
-    color: var(--text-heading-white);
+    color: var(--secondary-sand-gold);
 }
 
 a:hover {
@@ -201,11 +207,11 @@ a:hover {
 
 a:active,
 a:focus {
-    color: var(--secondary-sand-gold);
+    color: var(--text-heading-white);
 }
 
 
-/* general elements desogn */
+/* general elements design */
 
 h1 {
     font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
@@ -256,7 +262,7 @@ p {
 }
 
 
-/* Hero area Styling */
+/* Hero area of homepage Styling */
 
 .hero-area-title {
     display: flex;
@@ -292,7 +298,6 @@ p {
 
 .hero-area-content .screening-type {
     margin-top: 6em;
-    /* margin-right: 4em; */
 }
 
 .hero-area-content .screening-type p {
@@ -340,7 +345,7 @@ p {
 }
 
 
-/* about movie homepage section */
+/* about movie homepage styling */
 
 .movie-section-wrapper {
     margin: 5em 13em 5em 13em;
@@ -364,8 +369,8 @@ p {
 .about-wrapper .trailer-image {
     text-align: center;
     cursor: pointer;
-    width: 300;
-    height: 430;
+    width: 300px;
+    height: 430px;
     filter: sepia(60%);
     background-size: cover;
     background-image: url(./images/godfather-poster.png);
@@ -422,7 +427,7 @@ p {
 }
 
 
-/* title actor section */
+/* title actor homepage styling */
 
 .title-actor {
     margin: 2em 0 2em 0;
@@ -454,7 +459,7 @@ p {
 }
 
 
-/* cast and crew wrap */
+/* cast and crew wrap styling */
 
 .cast-and-crew-wrapper {
     margin: 0 13em 0 13em;
@@ -462,6 +467,10 @@ p {
 
 .cast-and-crew-wrapper h4 {
     padding: 4em 0 1em 0;
+}
+
+.cast-and-crew-wrapper h3 {
+    padding-bottom: 1em;
 }
 
 .cast-and-crew-wrapper .other-cast {
@@ -500,7 +509,6 @@ p {
 
 .director-wrap figure {
     flex-basis: 50%;
-    /* border-right: 3px solid #494949; */
 }
 
 .director-wrap figure img:last-child {
@@ -518,8 +526,6 @@ p {
 .cinematography-wrap {
     padding: 5em 0 5em 0;
     display: flex;
-    /* background-image: url(./images/cinema-seat.png);
-    background-size: contain; */
     background: radial-gradient(50% 50% at 50% 50%, #212121 0%, #1b1a1a 100%);
 }
 
@@ -528,12 +534,12 @@ p {
 }
 
 .cinematography-wrap figure img {
-    margin-left: 10em;
+    margin-left: 13em;
 }
 
 .cinematography-wrap .text-and-rectangle {
     margin-top: 9em;
-    margin-left: 9em;
+    margin-left: 6em;
     border: 5px solid var(--primary-red);
     width: 250px;
     height: 150px;
@@ -553,7 +559,7 @@ p {
 }
 
 
-/****************** Responsive Design********************************** */
+/****************** Responsiveness Design Homepage********************************** */
 
 @media screen and (max-width: 1200px) {
     header .hero-wrapper {
@@ -852,24 +858,26 @@ footer p {
 }
 
 
-/* movie page design ************************************************************** */
+/****************************** movie page design ************************************************************** */
 
 .second-hero {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(180deg, #49372B 32.1%, rgba(75, 52, 50, 0) 100%);
-    /* background: linear-gradient(180deg, #654C3B 32.77%, rgba(75, 52, 50, 0) 100%); */
-    /* background: linear-gradient(180deg, #4b3432 32.77%, rgba(75, 52, 50, 0) 100%); */
+    padding: 2em 12em 2em 12em;
 }
 
-.second-hero h2 {
+.second-hero .title-name-wrapper {
     margin-top: 3em;
-    margin-left: 6em;
+    display: flex;
 }
 
-.second-hero img {
-    padding: 1em;
-    margin-right: 12em;
+.second-hero .title-name-wrapper h2 {
+    padding-top: .2em;
+}
+
+.second-hero img:first-child {
+    padding-right: .5em;
 }
 
 .content-wrapper {
@@ -927,22 +935,31 @@ footer p {
     width: 100%;
 }
 
-.movie-table-wrapper dl {
-    padding: 1em;
+.movie-table-wrapper .information-table {
+    margin: 1em;
+    font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+    font-size: 18px;
+    color: var(--text-heading-white);
+    width: 80%;
+}
+
+.movie-table-wrapper .information-table tbody {
     font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     font-size: 18px;
     color: var(--text-heading-white);
 }
 
-.movie-table-wrapper dd {
-    float: left;
-    padding: 1em 2em 1em 0em;
-    width: 50%;
+.movie-table-wrapper .information-table tbody tr {
+    padding: 1em;
     border-bottom: 3px solid rgb(96, 78, 64);
 }
 
-.movie-table-wrapper dt {
-    border-bottom: 3px solid rgb(96, 78, 64);
+.movie-table-wrapper .information-table th {
+    text-align: left;
+    width: 50%;
+}
+
+.movie-table-wrapper .information-table td {
     padding: 1em 2em 1em 0em;
     color: #d4b49e;
 }
@@ -990,23 +1007,21 @@ footer p {
 }
 
 
-/* movie page responsiveness
- */
+/* movie page responsiveness design*/
 
 @media screen and (max-width: 1200px) {
     .content-wrapper {
         margin: 5em 5em 10em 5em;
     }
+    .second-hero {
+        padding: 2em 5em 2em 5em;
+    }
 }
 
 @media screen and (max-width: 998px) {
-    .second-hero img {
+    .second-hero img:last-child {
         height: 176px;
         width: 280px;
-        margin-right: 4em;
-    }
-    .second-hero h2 {
-        margin-left: 2em;
     }
     .movie-synopsis img {
         width: 280px;
@@ -1033,9 +1048,10 @@ footer p {
     .movie-table-wrapper {
         padding: 1em;
     }
-    .movie-table-wrapper dl {
-        padding: .5em;
+    .movie-table-wrapper .information-table {
+        padding: 1em;
         font-size: 14px;
+        width: 90%;
     }
 }
 
@@ -1052,23 +1068,27 @@ footer p {
     p {
         font-size: 14px;
     }
-    .second-hero img {
+    .second-hero img:last-child {
         height: 80px;
         width: 117px;
-        margin-right: 2em;
-    }
-    .second-hero h2 {
-        margin-top: 1em;
-        margin-left: 1em;
     }
     .content-wrapper {
         margin: 2em;
     }
+    .second-hero {
+        padding: 2em;
+    }
     .movie-synopsis {
         margin: 2em 0 2em 0;
     }
-    .movie-table-wrapper dl {
+    .movie-table-wrapper {
+        margin-left: -2em;
+        margin-right: -2em;
+    }
+    .movie-table-wrapper .information-table {
         padding: .3em;
+    }
+    .movie-table-wrapper .information-table tbody {
         font-size: 11px;
     }
     .movie-table-wrapper dt {
@@ -1092,7 +1112,7 @@ footer p {
 }
 
 
-/* facts section design */
+/* facts about movie design */
 
 .movie-facts h4 {
     padding-bottom: 2em;
@@ -1112,7 +1132,7 @@ footer p {
 }
 
 
-/* **********************  Tickets and Time Page Design */
+/* **********************  Tickets and Time Page Design *********************/
 
 .second-hero .movie-kit-illustration {
     padding: 3em;
@@ -1155,6 +1175,7 @@ footer p {
     font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
     font-size: 16px;
     color: var(--text-heading-white);
+    font-weight: 600;
 }
 
 .showtime-wrapper .showtime-table tr {
@@ -1227,6 +1248,9 @@ footer p {
     font-size: 20px;
 }
 
+
+/* Firefox input number styling */
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -1234,7 +1258,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* Firefox */
+/* Firefox input number styling */
 
 input[type=number] {
     -moz-appearance: textfield;
@@ -1269,6 +1293,10 @@ input[type=number] {
 .location-wrapper {
     display: flex;
     background-color: #303030;
+}
+
+.location-wrapper iframe {
+    width: 50%;
 }
 
 .location-wrapper .cinema-address {
@@ -1323,7 +1351,7 @@ input[type=number] {
 }
 
 
-/* Cinema page responsiveness */
+/* Cinema page responsiveness design */
 
 @media screen and (max-width: 998px) {
     .showcase-cinema p {
@@ -1343,7 +1371,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 768px) {
-    .second-hero img {
+    .second-hero img:last-child {
         width: 200px;
         height: 120px;
     }
@@ -1383,7 +1411,7 @@ input[type=number] {
         padding-bottom: 1em;
     }
     .location-wrapper iframe {
-        width: 100%;
+        width: 50%;
     }
     .location-wrapper .cinema-address {
         margin: 3em;
@@ -1403,21 +1431,35 @@ input[type=number] {
     .second-hero .movie-kit-illustration {
         padding: 1em;
     }
+    .second-hero .title-name-wrapper {
+        margin-top: 0;
+    }
     .showcase-cinema figure img {
         width: 300px;
     }
-    .second-hero img {
+    .second-hero img:last-child {
         width: 100px;
         height: 60px;
     }
+    .showtime-wrapper {
+        margin-left: -2em;
+        margin-right: -2em;
+    }
     .showtime-wrapper .showtime-table {
-        font-size: 10px;
+        font-size: 11px;
     }
     .showtime-wrapper .ticket-price-wrapper .ticket-fare-table {
-        font-size: 10px;
+        font-size: 11px;
     }
     .showtime-wrapper .ticket-price-wrapper .ticket-fare-table td {
         font-size: 14px;
+    }
+    /* .location-wrapper {
+        margin-left: -2em;
+        margin-right: -2em;
+    } */
+    .location-wrapper iframe {
+        width: 100%;
     }
     .location-wrapper .cinema-address {
         margin: 2em;

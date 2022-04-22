@@ -1,0 +1,371 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: "";
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* Colors variable
+*/
+    
+     :root {
+        --primary-red: #d32e2a;
+        --primary-red-faded: #c44644;
+        --secondary-sand-gold: #d09771;
+        --bg-brown-black: #403630;
+        --bg-faded-maroon: #2b211c;
+        --bg-black: #252525;
+        --text-heading-white: rgb(195, 195, 195);
+        --text-faded-white: #918f8a;
+        --text-highlight-yellow: #ffd469;
+        --text-black: #101010;
+    }
+    
+    body {
+        background-color: var(--bg-black);
+        scroll-behavior: smooth;
+    }
+    
+    header nav {
+        padding: 0 5em 0 5em;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--bg-faded-maroon);
+    }
+    
+    header nav>a img {
+        padding: 1.5em 1.5em 1.5em 0;
+    }
+    
+    header nav ul li {
+        display: inline;
+    }
+    
+    header nav ul li a {
+        padding: 1.5em 1em 1em 1em;
+        color: var(--text-heading-white);
+        display: inline-block;
+        text-decoration: none;
+        font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+        font-size: 20px;
+    }
+    
+    a:link,
+    a:visited {
+        color: var(--text-heading-white);
+    }
+    
+    a:hover {
+        color: var(--primary-red-faded);
+    }
+    
+    a:active,
+    a:focus {
+        color: var(--secondary-sand-gold);
+    }
+    /* general elements desogn */
+    
+    h1 {
+        font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+        color: var(--text-heading-white);
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+        color: var(--text-heading-white);
+        font-size: 36px;
+        padding-bottom: 0.5em;
+    }
+    
+    h3 {
+        font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+        color: var(--primary-red-faded);
+        padding-bottom: 0.5em;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    
+    h4 {
+        font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+        color: var(--secondary-sand-gold);
+        padding-bottom: 0.5em;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    h5 {
+        font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+        color: var(--text-heading-white);
+        font-size: 24px;
+        padding-bottom: 0.5em;
+    }
+    
+    body {
+        color: var(--text-faded-white);
+    }
+    
+    p {
+        font-family: "Montserrat", "Merriweather", "Nunito Sans", "Oxygen", "Source Sans Pro";
+        font-size: 16px;
+        line-height: 1.8em;
+        font-weight: 500;
+    }
+    
+    main {
+        margin: 5em;
+        text-align: center;
+    }
+    
+    main p span {
+        font-family: "Bebas Neue", "Roboto Condensed", "Squada One", "Staatliches";
+        color: var(--primary-red-faded);
+        font-size: 36px;
+        padding-bottom: 0.5em;
+    }
+    
+    .car {
+        text-align: center;
+    }
+    
+    .car img {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+            margin-top: 10%;
+        }
+        to {
+            margin-top: 0%;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+        header nav {
+            display: block;
+        }
+        header nav>a img {
+            margin-left: 25%;
+        }
+        header nav ul li a {
+            width: 25%;
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 38px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+        header nav ul li a {
+            padding: 1.5em 0.5em;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        h1 {
+            font-size: 28px;
+            text-align: center;
+        }
+        main {
+            margin: 3em;
+        }
+        header nav {
+            display: block;
+            padding: 0 1em 0 1em;
+        }
+        header nav>a img {
+            margin-left: 25%;
+        }
+        header nav ul li a {
+            width: 25%;
+            text-align: center;
+        }
+    }
+    /* footer design */
+    
+    footer {
+        background-color: var(--bg-faded-maroon);
+    }
+    
+    .footer-wrapper {
+        padding: 2em 5em 2em 5em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer p {
+        padding-top: 0.5em;
+        color: var(--text-heading-white);
+    }
+    
+    .copyright {
+        background-color: #101010;
+    }
+    
+    .copyright p {
+        text-align: center;
+        font-size: 14px;
+        padding: 1em;
+        color: var(--text-faded-white);
+    }
+    /* footer responsiveness */
+    
+    @media screen and (max-width: 768px) {
+        .footer-wrapper {
+            padding: 2em;
+        }
+        .footer-wrapper .godfather-logo-left {
+            padding-right: 3em;
+        }
+        .footer-wrapper .godfather-logo-left a img {
+            width: 100px;
+        }
+        .copyright p {
+            font-size: 10px;
+        }
+    }
